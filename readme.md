@@ -13,7 +13,7 @@ npm i use-classy
 If you're working in React, you can import the `useClassy` hook, which is a simple convenience wrapper around the classy constructor. You can use the returned instance in your `className` props, like so:
 
 ```jsx
-import { useClassy } from "classy";
+import { useClassy } from "use-classy";
 import classes from "./style.module.scss";
 
 const SomeComponent = ({ title }) => {
@@ -24,6 +24,18 @@ const SomeComponent = ({ title }) => {
     </header>
   );
 };
+```
+
+This JSX would render the following HTML:
+
+```html
+<header className=BEMRoot>
+  <h2 className=BEMRoot--title>Some Title</h2>
+</header>
+<!--
+ This example shows the "naked" class names for clarity;
+ in reality this would actually render the scoped classnames!
+ -->
 ```
 
 ## Usage
