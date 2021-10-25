@@ -1,6 +1,6 @@
 module.exports = {
   ci: false,
-  branches: ["master", { name: "next", prerelease: true }],
+  branches: ["master", "feat/automated-releases"],
   plugins: [
     [
       "@semantic-release/commit-analyzer",
