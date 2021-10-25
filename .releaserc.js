@@ -1,6 +1,6 @@
 module.exports = {
   ci: false,
-  branches: ["master", "feat/automated-releases"],
+  branches: ["master"],
   plugins: [
     [
       "@semantic-release/commit-analyzer",
@@ -57,7 +57,7 @@ module.exports = {
     [
       "@semantic-release/npm",
       {
-        npmPublish: false,
+        npmPublish: true,
         tarballDir: "dist",
       },
     ],

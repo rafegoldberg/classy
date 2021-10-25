@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feat/automated-releases
 
 jobs:
   semantic-release:
