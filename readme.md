@@ -1,6 +1,6 @@
 Classy
 ===
-*A utility for generating class names in Javascript with support for CSS modules and BEM expansions.*
+*A utility for generating React [className] strings, with support for [CSS modules](#auto-scoping) and [BEM expansions](#bem-expansions).*
 
 ## Installation
 
@@ -10,14 +10,14 @@ npm i use-classy
 
 ## Usage
 
-At it's simplest, `classy` normalizes any number of selector strings or arrays of strings and generates a class list. By way of demonstration, here's an overly complicated example:
+At it's simplest, `classy` takes normalizes any number of strings, or nested arrays of strings, and generates a normalized class string. By way of demonstration, here's an overly complicated example:
 
 ```js
 import classy from "classy";
 classy("class1", [["class2"]], ".class3, class4");
 ```
 
-Which will give you:
+This will give you:
 
 ```js
 "class1 class2 class3 class4"
@@ -25,7 +25,7 @@ Which will give you:
 
 ### Auto-Scoping
 
-If you're using CSS modules, you can pass the imported hash of classes as the initial argument. Classy will automatically match and replace the "naked" selectors with their scoped counterpart!
+If you're using CSS modules, you can import your scoped classes and pass them as an initial argument. Classy will automatically match and replace the "naked" selectors with their scoped counterpart!
 
 ```js
 import classes from "./style.module.scss";
@@ -34,9 +34,18 @@ import classes from "./style.module.scss";
 classy(classes, "someClass"); // r2984fh9wnc
 ```
 
+If you'd like to reuse the same module scope in a bunch of places, you can construct an instance of classy for reuse like so:
+
+```js
+import classes from "./style.module.scss";
+
+const cn = new classy({ classes });
+cn("someClass"); // r2984fh9wnc
+```
+
 ### BEM Expansions
 
-`classy` can also auto-expand BEM "partial" selectors, i.e. any selector that starts with a `--`, a `__`. It will also replace the Sass-style `&` character with the BEM root class. So say you had the following SCSS module:
+`classy` can auto-expand BEM "partial" selectors, i.e. any selector that starts with a `--`, a `__`, as well as Sass-style `&` characters. Say, for example, you had the following SCSS module:
 
 ```scss
 .BEMRoot {
@@ -45,18 +54,17 @@ classy(classes, "someClass"); // r2984fh9wnc
 }
 ```
 
-Now we'll construct a new instance of `classy`, specifying a `root` class against which to expand partial BEM selectors: (BEM expansions work with [auto-scoping](#auto-scoping), so lets pass in our `classes` as well for the ultimate `classy`-ness!)
+We can construct a new instance of classy, specifying a base class against which to expand partial BEM selectors. For the ultimate `classy`-ness, we can also pass in our module classes, since BEM expansions work with [auto-scoping](#auto-scoping)!
 
 ```js
-import Classy from "classy";
 import classes from "./style.module.scss";
-const bem = new Classy({
+const bem = new classy({
   root: "BEMRoot",
   classes,
 });
 ```
 
-We can use our instance to generate some valid BEM selectors:
+Now we can use our instance to generate some obfuscated BEM selectors, off the cuff! (The following comments give the "naked" selectors for clarity; in reality this would actually output the scoped classnames.)
 
 ```js
 bem("&");          // BEMRoot
@@ -66,7 +74,7 @@ bem("__modifier"); // BEMRoot__modifier
 
 ## React Hook
 
-For convenience, we also exports a `useClassy` hook for your React components! This is really just a simple wrapper around Classy's constructor method, and takes the same hash of scoped classes and a BEM root class. Use the returned instance directly in your components' `className` props, like so:
+If you're working in React, you can import the `useClassy` hook! This is a simple convenience wrapper around the classy constructor, and you can the returned instance in your `className` props.
 
 ```jsx
 import { useClassy } from "classy";
