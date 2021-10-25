@@ -1,6 +1,17 @@
 Changelog
 ===
 
+## Version 1.1.0
+
+### 📘 Docs
+
+* **readme:** copy edits ([dc476de](https://github.com/rafegoldberg/classy/commit/dc476dea844aedfc17c74bcb83b1fbeffb06cffc))
+
+
+### ✨ New & Improved
+
+* add tracer method ([a3dca5a](https://github.com/rafegoldberg/classy/commit/a3dca5a5701ea47e1c9734b0e4f7abfb1075ce6c))
+
 ## Version 1.0.2
 
 ## Version 1.0.1
