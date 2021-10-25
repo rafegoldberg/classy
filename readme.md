@@ -1,6 +1,6 @@
 Classy
 ===
-*A utility for generating React [className] strings, with support for [CSS modules](#auto-scoping) and [BEM expansions](#bem-expansions).*
+*A [React hook](#react-hook) for generating `[className]` strings, with support for [CSS modules](#auto-scoping) and [BEM expansions](#bem-expansions).*
 
 ## Installation
 
@@ -8,12 +8,31 @@ Classy
 npm i use-classy
 ```
 
+## React Hook
+
+If you're working in React, you can import the `useClassy` hook, which is a simple convenience wrapper around the classy constructor. You can use the returned instance in your `className` props, like so:
+
+```jsx
+import { useClassy } from "classy";
+import classes from "./style.module.scss";
+
+const SomeComponent = ({ title }) => {
+  const bem = useClassy(classes, "SomeComponent");
+  return (
+    <header className={bem("&")}>
+      <h2 className={bem("--title")}>{title}</h2>
+    </header>
+  );
+};
+```
+
 ## Usage
 
-At it's simplest, `classy` takes normalizes any number of strings, or nested arrays of strings, and generates a normalized class string. By way of demonstration, here's an overly complicated example:
+At it's simplest, `classy` takes any number of selector strings or nested arrays of strings, and generates a normalized class string. By way of demonstration, here's an overly complicated example:
 
 ```js
 import classy from "use-classy";
+
 classy("class1", [["class2"]], ".class3, class4");
 ```
 
@@ -29,7 +48,7 @@ If you're using CSS modules, you can import your scoped classes and pass them as
 
 ```js
 import classes from "./style.module.scss";
-// imagining ^this resolves to something like { someClass: "r2984fh9wnc" }
+// so if ^this resolves to something like { someClass: "r2984fh9wnc" }
 
 classy(classes, "someClass"); // r2984fh9wnc
 ```
@@ -70,22 +89,4 @@ Now we can use our instance to generate some obfuscated BEM selectors, off the c
 bem("&");          // BEMRoot
 bem("--element");  // BEMRoot--element
 bem("__modifier"); // BEMRoot__modifier
-```
-
-## React Hook
-
-If you're working in React, you can import the `useClassy` hook! This is a simple convenience wrapper around the classy constructor, and you can the returned instance in your `className` props.
-
-```jsx
-import { useClassy } from "classy";
-import classes from "./style.module.scss";
-
-const SomeComponent = ({ title }) => {
-  const bem = useClassy(classes, "SomeComponent");
-  return (
-    <header className={bem("&")}>
-      <h2 className={bem("--title")}>{title}</h2>
-    </header>
-  );
-};
 ```
