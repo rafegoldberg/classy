@@ -13,7 +13,7 @@ npm i use-classy
 At it's simplest, `classy` takes normalizes any number of strings, or nested arrays of strings, and generates a normalized class string. By way of demonstration, here's an overly complicated example:
 
 ```js
-import classy from "classy";
+import classy from "use-classy";
 classy("class1", [["class2"]], ".class3, class4");
 ```
 
