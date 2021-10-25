@@ -1,6 +1,12 @@
 Changelog
 ===
 
+## Version 1.1.2
+
+### 🤘 Fixes & Updates
+
+* **package:** add keywords ([6d98655](https://github.com/rafegoldberg/classy/commit/6d9865549c2a8a6d1848a385242006e386a2861e))
+
 ## Version 1.1.1
 
 ### 🤘 Fixes & Updates

@@ -1,7 +1,7 @@
 {
   "name": "use-classy",
   "description": "A utility for generating React [className] strings, with support for CSS modules and BEM expansions.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "ISC",
   "author": "Rafe <rafegoldberg@gmail.com>",
   "source": "src/classy.js",
