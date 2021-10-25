@@ -1,6 +1,12 @@
 Changelog
 ===
 
+## Version 1.1.1
+
+### 🤘 Fixes & Updates
+
+* **package:** add description ([#3](https://github.com/rafegoldberg/classy/issues/3)) ([e3e7b83](https://github.com/rafegoldberg/classy/commit/e3e7b83ba53750f5c29f064acbf3aaf2c1310b7a))
+
 ## Version 1.1.0
 
 ### 📘 Docs
