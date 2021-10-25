@@ -1,6 +1,8 @@
 {
   "name": "use-classy",
   "version": "1.0.0",
+  "license": "ISC",
+  "author": "Rafe <rafegoldberg@gmail.com>",
   "source": "src/classy.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
@@ -28,7 +30,5 @@
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "parcel": "^2.0.0"
-  },
-  "author": "Rafe <rafegoldberg@gmail.com>",
-  "license": "ISC"
+  }
 }
