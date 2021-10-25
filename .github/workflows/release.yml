@@ -36,7 +36,7 @@ jobs:
         # see: https://github.com/semantic-release/changelog/issues/168
         run: npm i --no-save @semantic-release/changelog@5 @semantic-release/git@9
       - name: Build release
-        run: npx -y semantic-release --debug --dryRun
+        run: npm_config_yes=true npx semantic-release --debug --dryRun
         env:
           GH_TOKEN: ${{ secrets.GITHUB_ADMIN || secrets.GITHUB_TOKEN }} # push release to remote repo
           NPM_TOKEN: ${{ secrets.NPM_TOKEN || secrets.GITHUB_TOKEN }}   # publish package to registry
