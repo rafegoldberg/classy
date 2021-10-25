@@ -1,6 +1,6 @@
 {
   "name": "use-classy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "author": "Rafe <rafegoldberg@gmail.com>",
   "source": "src/classy.js",
