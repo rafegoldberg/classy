@@ -8,7 +8,9 @@
     "clean": "rm -rf .parcel-cache; rm -rf dist/*; rm -rf public/*",
     "watch": "parcel watch",
     "build": "parcel build",
-    "test": "jest"
+    "test": "jest",
+    "release": "npx semantic-release",
+    "release.debug": "npm run release -- --debug --dryRun"
   },
   "dependencies": {
     "lodash": "^4.17.21"
@@ -16,10 +18,14 @@
   "devDependencies": {
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-angular": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@parcel/babel-preset-env": "^2.0.0",
     "@parcel/transformer-sass": "^2.0.0",
     "autoprefixer": "^10.3.7",
     "babel-jest": "^27.3.1",
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
     "parcel": "^2.0.0"
   },
