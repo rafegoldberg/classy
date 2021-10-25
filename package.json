@@ -1,6 +1,8 @@
 {
   "name": "use-classy",
   "version": "1.0.1",
+  "license": "ISC",
+  "author": "Rafe <rafegoldberg@gmail.com>",
   "source": "src/classy.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
@@ -8,9 +10,7 @@
     "clean": "rm -rf .parcel-cache; rm -rf dist/*; rm -rf public/*",
     "watch": "parcel watch",
     "build": "parcel build",
-    "test": "jest",
-    "release": "npx semantic-release",
-    "release.debug": "npm run release -- --debug --dryRun"
+    "test": "jest"
   },
   "dependencies": {
     "lodash": "^4.17.21"
@@ -29,6 +29,9 @@
     "jest": "^27.3.1",
     "parcel": "^2.0.0"
   },
-  "author": "Rafe <rafegoldberg@gmail.com>",
-  "license": "ISC"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }

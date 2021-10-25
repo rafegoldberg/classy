@@ -8,8 +8,11 @@ module.exports = {
         preset: "angular",
         releaseRules: [
           { type: "feat", release: "minor" },
-          { type: "style", release: "patch" },
+          { type: "enhance", release: "minor" },
           { type: "refactor", release: "patch" },
+          { type: "style", release: "patch" },
+          { type: "perf", release: "patch" },
+          { type: "change", release: "patch" },
           { scope: "skip", release: false },
         ],
         parserOpts: {
@@ -24,17 +27,21 @@ module.exports = {
         presetConfig: {
           types: [
             { type: "feat", section: "✨ New & Improved", hidden: false },
+            { type: "enhance", section: "✨ New & Improved", hidden: true },
             { type: "refactor", section: "✨ New & Improved", hidden: true },
 
-            { type: "style", section: "💄 Style Refinements", hidden: false },
+            { type: "style", section: "💄 Styling & Polish", hidden: false },
 
-            { type: "fix", section: "🛠 Fixes & Updates", hidden: false },
-            { type: "perf", section: "🛠 Fixes & Updates", hidden: false },
-            { type: "chore", section: "🛠 Fixes & Updates", hidden: true },
-            { type: "test", section: "🛠 Fixes & Updates", hidden: true },
+            { type: "fix", section: "🤘 Fixes & Updates", hidden: false },
+            { type: "perf", section: "🤘 Fixes & Updates", hidden: false },
+            { type: "chore", section: "🤘 Fixes & Updates", hidden: false },
+            { type: "change", section: "🤘 Fixes & Updates", hidden: false },
+            { type: "revert", section: "🤘 Fixes & Updates", hidden: false },
 
             { type: "docs", section: "📘 Docs", hidden: false },
-
+            { type: "devx", section: "🛠 Development Workflow", hidden: false },
+            
+            { type: "test", hidden: true },
             { type: "build", hidden: true },
             { type: "ci", hidden: true },
           ],
