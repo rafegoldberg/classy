@@ -10,9 +10,7 @@
     "clean": "rm -rf .parcel-cache; rm -rf dist/*; rm -rf public/*",
     "watch": "parcel watch",
     "build": "parcel build",
-    "test": "jest",
-    "release": "npx semantic-release",
-    "release.debug": "npm run release -- --debug --dryRun"
+    "test": "jest"
   },
   "dependencies": {
     "lodash": "^4.17.21"
@@ -30,5 +28,10 @@
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "parcel": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
