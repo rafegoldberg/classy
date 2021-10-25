@@ -1,6 +1,12 @@
 Changelog
 ===
 
+## Version 1.1.3
+
+### 🤘 Fixes & Updates
+
+* **readme:** reorder + copy edit ([a952fe3](https://github.com/rafegoldberg/classy/commit/a952fe3bec17d573736270f4c6e5d05b399c607f))
+
 ## Version 1.1.2
 
 ### 🤘 Fixes & Updates
