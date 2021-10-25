@@ -1,6 +1,6 @@
 {
   "name": "use-classy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "source": "src/classy.js",
   "main": "dist/main.js",
   "module": "dist/module.js",

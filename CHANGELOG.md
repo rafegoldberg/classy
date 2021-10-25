@@ -1,6 +1,12 @@
 Changelog
 ===
 
+## Version 1.0.1
+
+### 🛠 Fixes & Updates
+
+* release branch configuration ([1faa68d](https://github.com/rafegoldberg/classy/commit/1faa68d847b6e3c9bcff4af7b3d1a9f850a42be6))
+
 ## Version 1.0.0
 
 ### 📘 Docs
