@@ -17,7 +17,7 @@ import { useClassy } from "use-classy";
 import classes from "./style.module.scss";
 
 const SomeComponent = ({ title }) => {
-  const bem = useClassy(classes, "SomeComponent");
+  const bem = useClassy(classes, "BEMRoot");
   return (
     <header className={bem("&")}>
       <h2 className={bem("--title")}>{title}</h2>
