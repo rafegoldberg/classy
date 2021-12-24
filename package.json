@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Rafe <rafegoldberg@gmail.com>",
   "main": "dist/classy.js",
-  "browser": "dist/classy.umd.js",
+  "browser": "dist/classy.js",
   "module": "dist/classy.esm.js",
   "scripts": {
     "clean": "rm -rf dist/",
