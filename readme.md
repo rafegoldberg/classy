@@ -1,6 +1,6 @@
 # Classy
 
-*A [React hook](#react-hook) for generating* `[className]` *strings, with support for [CSS modules](#auto-scoping) and [BEM expansions](#bem-expansions).*
+*A [React hook](#react-hook) for generating* `[className]` *strings, with support for [CSS Modules](#auto-scoping) and [BEM expansions](#bem-expansions).*
 
 ---
 
