@@ -1,6 +1,6 @@
-# Classy
+# Classy <img src="https://github.com/github/docs/actions/workflows/test.yml/badge.svg?branch=main" align=center>
 
-<img src="https://github.com/github/docs/actions/workflows/test.yml/badge.svg?branch=main" align=right> *A utility for generating class name strings, with support for [CSS Modules](#auto-scoping) and [BEM expansions](#bem-expansion).*
+*A utility for generating class name strings, with support for [CSS Modules](#auto-scoping) and [BEM expansions](#bem-expansion).*
 
 ---
 
