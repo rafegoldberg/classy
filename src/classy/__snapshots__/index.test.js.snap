@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classy BEM Expansion Skips pre-scoped classes that end in \`-scss\`. 1`] = `"PRESCOPED"`;

@@ -1,0 +1,11 @@
+.BEMRoot {
+  & {
+    content: 'root styles';
+  }
+  &-element {
+    content: 'element styles';
+  }
+  &_modifier {
+    content: 'modifier styles';
+  }
+}

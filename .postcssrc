@@ -1,8 +1,0 @@
-{
-  "modules": true,
-  "plugins": {
-    "postcss-modules": {
-      "generateScopedName": "[local]--[hash:6]"
-    }
-  }
-}
