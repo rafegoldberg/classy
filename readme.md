@@ -91,7 +91,7 @@ bem('_modifier'); // Block_modifier
 
 #### React Hook
 
-<details>
+<details open>
 <summary>A React-ready wrapper around our classy utility! Call it like any hook, and use the returned instance to generate selector structures for your <code>className</code> props, like so:</summary><br/>
 
 ```jsx static
