@@ -45,13 +45,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
         continue-on-error: true
-      - name: Sync to next
-        if: "github.ref == 'refs/heads/master'"
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: next
-        continue-on-error: true
+      # - name: Sync to next
+      #   if: "github.ref == 'refs/heads/master'"
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: next
+      #   continue-on-error: true
       - name: Save bundle
         uses: actions/upload-artifact@v1
         with:
