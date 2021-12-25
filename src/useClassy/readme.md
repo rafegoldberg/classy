@@ -1,9 +1,9 @@
 # `useClassy` Hook
 
-A React-ready wrapper around our classy utility! Call it like any hook, and use the returned instance to generate selector structures for your `className` props, like so:
+A React-ready wrapper around the `classy` utility. Call it like you would any React hook, and use the returned instance to generate selector structures for your `className` props, like so:
 
 ```jsx static
-import classy from '@core/hooks/useClassy';
+import { classy } from 'use-classy';
 import classes from './style.module.scss';
 
 const MyElement = ({ title, className }) => {
@@ -24,4 +24,4 @@ Given this JSX, you'd end up with the following HTML structure: (This example sh
 </header>
 ```
 
-Read more about the underlying `classy` method [here](/ui/#/Core/Utilities/Classy)!
+<!-- Read more about the underlying `classy` method [here](/ui/#/Core/Utilities/Classy)! -->

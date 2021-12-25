@@ -1,29 +1,21 @@
-# Classy
+Classy does a lot of things. At it's simplest, it’s a utility method for generating normalized class name strings for the HTML `[class]` attribute. It also supports CSS Modules and BEM expansions, and ships with a React-ready hook. 
 
-> #### 🪝 **Ahoy There!** 🏴‍☠️
->
-> _You’re probably looking for the_ `useClassy()` _hook. It’s a fully memoized, React-ready wrapper around classy, so you’ll definitely want to use it instead of the raw, underlying method! [Check out the docs](/ui/#/Core/Hooks/UseClassy)→_
-
----
-
-Classy does a lot of things. At it's simplest, it’s a utility method for generating `[className]` strings. (It also supports CSS Modules and BEM expansions!) Pass Classy any number of selector as strings or nested arrays of strings, and it'll generate a normalized class string:
+To get started, you can pass Classy any number of selectors (either strings or nested arrays of strings) and it will generate a normalized class string. Here's a contrived example:
 
 ```js static
-import classy from '@core/utils/classy';
+import { classy } from 'use-classy';
 
-classy('class1', [[false || 'class2'], [[['class3']]]], '.class4, class5')
+classy('class1', [[false && 'class2'], [[['class3']]]], '.class4, class5')
 ```
 
-This will give you:
+Under the hood, this will flatten everything in to a single array, filter out any falsey values, and more! All of which gives you a nice, simple, space-separated class string:
 
 ```js static
 'class1 class2 class3 class4 class5';
 ```
 
 #### Auto-Scoping
-
-<details>
-<summary>If you're importing a CSS module, you can pass the scoped classes as the first argument. Classy will automatically match and replace the "naked" selectors with their scoped counterparts! <em id="more">Click for examples→</em></summary>
+If you're importing a CSS module, you can pass the scoped classes as the first argument. Classy will automatically match and replace the "naked" selectors with their scoped counterparts!
 
 ```js static
 import classes from './style.module.scss';
@@ -37,18 +29,12 @@ If you'd like to reuse the same scope in a bunch of places, you can construct an
 ```js static
 import classes from './style.module.scss';
 
-const cn = new classy({ classes });
-cn('someClass'); // r2984fh9wnc
+const bem = new classy({ classes });
+bem('someClass'); // r2984fh9wnc
 ```
 
-</details>
-
 #### BEM Expansion
-
-<details>
-<summary>Classy can auto-expand BEM "partial" selectors. Call it with the <code class="rsg--code-45">bem</code> namespace option to prefix any selector that starts with <code class="rsg--code-45">-</code> or a <code class="rsg--code-45">_</code> with the root class. Sass-style root selectors (<code class="rsg--code-45">&amp;</code>) will also be replaced with the root namespace. <em id="more">Click for examples→</em></summary>
-
-Say, for example, you had the following SCSS module…
+Classy can auto-expand BEM "partial" selectors. Call it with the `bem` namespace option to prefix any selector that starts with `-` or a `_` with the root class. Sass-style root selectors (`&`) will also be replaced with the root namespace. So say, for example, you had the following SCSS module…
 
 ```scss
 .Block {
@@ -63,13 +49,14 @@ We can construct a new instance of classy, specifying a base class against which
 
 ```js static
 import classes from './style.module.scss';
+
 const bem = new classy({
   bem: 'Block',
   classes,
 });
 ```
 
-Now we can reuse a single classy instance throughout our component to generate markup structures against our BEM selectors on the fly! 💥
+Now we can reuse a single classy instance throughout our component to generate markup structures against our BEM selectors on the fly. 💥
 
 ```js static
 bem();            // Block
@@ -79,5 +66,3 @@ bem('_modifier'); // Block_modifier
 ```
 
 (The above comments give the "naked" selectors for clarity; in reality this would actually output the scoped classnames.)
-
-</details>
