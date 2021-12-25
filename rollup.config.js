@@ -8,6 +8,7 @@ import resolve from "@rollup/plugin-node-resolve";
 
 const ENV = process.env.NODE_ENV || "development";
 const PKG = require(`${process.cwd()}/package.json`);
+const RAN = process.env.npm_lifecycle_event;
 
 export default {
   input: "src/index.js",
@@ -26,7 +27,7 @@ export default {
   ],
   plugins: [
     ENV === "development" && progress(),
-    ENV === "development" && filesize(),
+    ENV === "development" && RAN !== "watch" && filesize(),
 
     external(),
     resolve(),
