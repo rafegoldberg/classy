@@ -10,7 +10,7 @@ import { classy } from "../classy";
  */
 export const useClassy = (scope, namespace) => {
   const bem = useCallback(() => {
-    return new Classy({
+    return new classy({
       classes: scope,
       bem: namespace,
     });
