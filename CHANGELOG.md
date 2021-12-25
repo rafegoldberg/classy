@@ -1,6 +1,22 @@
 Changelog
 ===
 
+## Version 1.2.0
+
+### ✨ New & Improved
+
+* **github:** run tests ([5834acf](https://github.com/rafegoldberg/classy/commit/5834acfa6cbada876e6d42eff980badb0f1c68f3))
+* simplify classy; nix stack tracing ([565126c](https://github.com/rafegoldberg/classy/commit/565126c3b2e43144aecac21900ccbcad2418a2e2))
+
+
+### 🤘 Fixes & Updates
+
+* **config:** add codeowners ([0308cf6](https://github.com/rafegoldberg/classy/commit/0308cf6d60054138b51bf18cdbd2cc0e8cc3f476))
+* configure rollup ([d48a21e](https://github.com/rafegoldberg/classy/commit/d48a21e55c75c60774158537f12d0f96d68ab86d))
+* **deps:** install rollup et al ([068db8e](https://github.com/rafegoldberg/classy/commit/068db8efb7c2b0bed87a5cd19a4863ec9c7099d2))
+* nix parcel ([2ccb77f](https://github.com/rafegoldberg/classy/commit/2ccb77f71ab2827741440853c893ed744e629a92))
+* **github:** run tests on main ([7e27c34](https://github.com/rafegoldberg/classy/commit/7e27c34a9c97beee645b6158b8832987ca49f9a8))
+
 ## Version 1.1.3
 
 ### 🤘 Fixes & Updates
