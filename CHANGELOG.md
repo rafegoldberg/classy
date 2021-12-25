@@ -1,6 +1,22 @@
 Changelog
 ===
 
+## Version 1.2.1
+
+### 📘 Docs
+
+* fix links ([7a13443](https://github.com/rafegoldberg/classy/commit/7a134432289d56cffbef6af56a7c0d91c635c6fc))
+* open hooks details ([b1e4b21](https://github.com/rafegoldberg/classy/commit/b1e4b2119fa5619dbdbf74cc4a7276ba404427fe))
+* update readme ([7538809](https://github.com/rafegoldberg/classy/commit/753880949ecf0dcb5f34a620a81cd72a3cac0d34))
+* update readme ([9398407](https://github.com/rafegoldberg/classy/commit/9398407eb39b37c04724efb65d83ed036b9911d3))
+* update readme ([76df86c](https://github.com/rafegoldberg/classy/commit/76df86cdf2c3db689f45ceede86e0a011f04e3bf))
+
+
+### 🤘 Fixes & Updates
+
+* **useClassy:** lowercase imports ([278f38d](https://github.com/rafegoldberg/classy/commit/278f38d6af016500ae34baf58d20b96b7c68632f))
+* update readme ([36560db](https://github.com/rafegoldberg/classy/commit/36560db1338043c7a8d999eee83f848ae4d6e89f))
+
 ## Version 1.2.0
 
 ### ✨ New & Improved
