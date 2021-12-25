@@ -1,6 +1,21 @@
 Changelog
 ===
 
+## Version 1.2.2
+
+### 📘 Docs
+
+* **ci:** add status badge ([1bff0ae](https://github.com/rafegoldberg/classy/commit/1bff0aeea7d9efea1ed1b442d99455cdf63273bb))
+* align status badge to header ([f354386](https://github.com/rafegoldberg/classy/commit/f354386d65b3571fe23d02e549c4c68277a22471))
+
+
+### 🤘 Fixes & Updates
+
+* hide filesize on watch ([bd8cb71](https://github.com/rafegoldberg/classy/commit/bd8cb71fb38cb43b5dd82cef9bef34b850def133))
+* **github/release:** nix sync to next step ([33170c2](https://github.com/rafegoldberg/classy/commit/33170c23d32695fcb2b2525212e1f4d8f151f2d5))
+* **deps:** use core-js@2.x ([dc58f25](https://github.com/rafegoldberg/classy/commit/dc58f2529c0ac916e429272a60a378e3fbadc919))
+* **deps:** use peer react >= 16.8 ([d794bda](https://github.com/rafegoldberg/classy/commit/d794bda01cd1cd56a5d7e27772d6fad686e982af))
+
 ## Version 1.2.1
 
 ### 📘 Docs
