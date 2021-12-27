@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classy CSS Module Auto-Scoping skips pre-scoped classes that end in \`-scss\` (WHY DO WE DO THIS!?) 1`] = `"PRESCOPED"`;
