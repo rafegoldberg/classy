@@ -9,12 +9,10 @@ import { classy } from "../classy";
  * @returns {String}            a normalized list of class selectors
  */
 export const useClassy = (scope, namespace) => {
-  const bem = useCallback(() => {
-    return new classy({
-      classes: scope,
-      bem: namespace,
-    });
-  }, [scope, namespace]);
+  const bem = useCallback(
+    () => new classy(scope, namespace),
+    [scope, namespace]
+  );
   return useMemo((...args) => bem(...args), [bem]);
 };
 

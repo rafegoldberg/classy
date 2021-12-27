@@ -36,7 +36,10 @@ export function classy(...args) {
    * can be reused for its scope and BEM root!
    */
   if (new.target) {
-    const { bem = "", classes = {}, scope = {} } = args?.[0] || {};
+    let scope, namespace;
+    if (typeof args[0] === "string") [namespace, scope] = args;
+    else [scope, namespace] = args;
+    const { bem = namespace, classes = {} } = scope || {};
     return (...selectors) => {
       const cn = classy({ bem, ...scope, ...classes }, selectors);
       return cn || scope?.[bem] || bem;
