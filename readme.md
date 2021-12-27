@@ -99,7 +99,7 @@ import { useClassy } from 'use-classy';
 import classes from './style.module.scss';
 
 const MyElement = ({ title, className }) => {
-  const bem = useClassy(classes, 'MyElement');
+  const bem = useClassy('MyElement', classes);
   return (
     <header className={bem('&', className)}>
       <h2 className={bem('-title')}>{title}</h2>
