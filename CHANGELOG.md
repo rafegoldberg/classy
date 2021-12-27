@@ -1,6 +1,12 @@
 Changelog
 ===
 
+## Version 1.2.3
+
+### 🤘 Fixes & Updates
+
+* simplify instance args signature ([6b4c8f8](https://github.com/rafegoldberg/classy/commit/6b4c8f8598677a638792ee7133bd0a5d7fe4440c))
+
 ## Version 1.2.2
 
 ### 📘 Docs
