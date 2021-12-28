@@ -1,6 +1,17 @@
 Changelog
 ===
 
+## Version 1.2.4
+
+### 📘 Docs
+
+* update hook example ([2949830](https://github.com/rafegoldberg/classy/commit/2949830528614a7217a51c23f7ac197edbf178da))
+
+
+### 🤘 Fixes & Updates
+
+* **release:** build for production ([3662415](https://github.com/rafegoldberg/classy/commit/36624151de90408cd00a990b7b116e57bbae3523))
+
 ## Version 1.2.3
 
 ### 🤘 Fixes & Updates
