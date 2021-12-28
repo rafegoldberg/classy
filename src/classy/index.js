@@ -3,7 +3,7 @@
 import isObject from "lodash/isPlainObject";
 import flat from "lodash/flattenDeep";
 
-export const SEPARATORS = ["-", "_"];
+export const CLASSY_SEPARATORS = ["-", "_"];
 
 const splitClassStrings = (classes) =>
   flat(
@@ -23,7 +23,7 @@ const expandBEMPartials = (classname, namespace) => {
   /* Prefix BEM separator "partials"
    * with the BEM namespace...
    */
-  if (SEPARATORS.includes(classname[0])) {
+  if (CLASSY_SEPARATORS.includes(classname[0])) {
     if (!classname.includes("-scss")) return `${namespace}${classname}`;
   }
 
@@ -86,6 +86,6 @@ export function classy(...args) {
     .join(" ");
 }
 
-classy.SEPARATORS = SEPARATORS;
+classy.SEPARATORS = CLASSY_SEPARATORS;
 
 export default classy;

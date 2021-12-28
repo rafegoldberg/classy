@@ -1,2 +1,8 @@
-export { classy, SEPARATORS } from "./classy";
-export { useClassy } from "./useClassy";
+export {
+  classy,
+  classy as default,
+  CLASSY_SEPARATORS,
+  CLASSY_SEPARATORS as SEPARATORS, // deprecated
+} from "./classy";
+
+export { useClassy, CLASSY_PROPTYPE } from "./useClassy";
