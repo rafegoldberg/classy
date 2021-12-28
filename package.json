@@ -11,7 +11,8 @@
     "clean": "rm -rf dist/",
     "watch": "rollup -c --watch",
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "test.watch": "jest --watch"
   },
   "dependencies": {
     "lodash": "^4.x"
