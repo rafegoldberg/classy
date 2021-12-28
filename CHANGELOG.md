@@ -1,6 +1,18 @@
 Changelog
 ===
 
+## Version 1.3.0
+
+### 🤘 Fixes & Updates
+
+* **scripts:** add test.watch ([67e7f6f](https://github.com/rafegoldberg/classy/commit/67e7f6f6cb8e6ae3534448b84b037a18f647de85))
+* **exports:** rename SEPARATORS ([7ae8d14](https://github.com/rafegoldberg/classy/commit/7ae8d14ab258dd08f8c51ab3fa9f138e172f7e4f))
+
+
+### ✨ New & Improved
+
+* **exports:** add CLASSY_PROPTYPE ([cc5e2ef](https://github.com/rafegoldberg/classy/commit/cc5e2ef4ca579d513abfbfb9f838eeb448132100))
+
 ## Version 1.2.4
 
 ### 📘 Docs
