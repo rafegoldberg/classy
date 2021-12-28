@@ -28,7 +28,7 @@ jobs:
       - name: Install packages
         run: |
           npm ci
-          npm run build --if-present
+          NODE_ENV=production npm run build --if-present
         env:
           CI: true
       - name: Install release dependencies
