@@ -79,8 +79,8 @@ Now we can reuse a single classy instance throughout our component to generate m
 ```js static
 bem();            // Block
 bem('&');         // Block
-bem('-element');  // Block-element
-bem('_modifier'); // Block_modifier
+bem('--element');  // Block-element
+bem('__modifier'); // Block_modifier
 ```
 
 (The above comments give the "naked" selectors for clarity; in reality this would actually output the scoped classnames.)
