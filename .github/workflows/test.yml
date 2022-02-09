@@ -27,6 +27,7 @@ jobs:
       - name: Install packages
         run: |
           npm ci
+          npm i react prop-types --no-save
       - name: Run Tests
         run: |
           npm test
