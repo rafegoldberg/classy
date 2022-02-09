@@ -13,6 +13,7 @@ module.exports = {
           { type: "style", release: "patch" },
           { type: "perf", release: "patch" },
           { type: "change", release: "patch" },
+          { type: "fix", release: "patch" },
           { scope: "skip", release: false },
         ],
         parserOpts: {
@@ -40,7 +41,7 @@ module.exports = {
 
             { type: "docs", section: "📘 Docs", hidden: false },
             { type: "devx", section: "🛠 Development Workflow", hidden: false },
-            
+
             { type: "test", hidden: true },
             { type: "build", hidden: true },
             { type: "ci", hidden: true },
