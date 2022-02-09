@@ -1,16 +1,14 @@
 # Classy <a href="https://github.com/rafegoldberg/classy/actions/workflows/test.yml"><img src="https://github.com/rafegoldberg/classy/actions/workflows/test.yml/badge.svg?branch=main" align=center></a>
 
-*A utility for generating class name strings, with support for [CSS Modules](#auto-scoping) and [BEM expansions](#bem-expansion).*
-
----
+*A utility for generating class name strings, with support for [CSS Module scoping](#auto-scoping) and [BEM expansion](#bem-expansion).*
 
 ## Installation
-```shell
-npm i use-classy
+```bash
+npm i -S use-classy
 ```
 
 ## Usage
-Classy does a lot of things. At it's simplest, it’s a utility method for generating normalized class name strings for the HTML `[class]` attribute. It also supports CSS Modules and BEM expansions, and ships with [**a React-ready hook**](#react-hook). 
+Classy does a lot of things, but at it's simplest, it’s a utility method for generating normalized class name strings. It also supports CSS Modules and BEM expansions, and ships with [**a React-ready hook**](#react-hook). 
 
 To get started, you can pass Classy any number of selectors (either strings or nested arrays of strings) and it will generate a normalized class string. Here's a contrived example:
 
