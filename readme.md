@@ -92,7 +92,7 @@ bem('_modifier'); // Block_modifier
 ### 🪝  React Hook Usage
 
 <details>
-<summary>Classy comes with a React-ready wrapper around the main `classy` method! You can call it like any other hook, and use the returned instance to generate selector structures for your <code>className</code> props, like so:</summary><br/>
+<summary>Classy comes with a React-ready wrapper around the main <code>classy</code> method! You can call it like any other hook, and use the returned instance to generate selector structures for your <code>className</code> props, like so:</summary><br/>
 
 ```jsx static
 import { useClassy } from 'use-classy';
