@@ -26,7 +26,7 @@ Under the hood, this will flatten everything in to a single array, filter out an
 'class1 class2 class3 class4 class5';
 ```
 
-#### Auto-Scoping
+### 💄  Auto-Scoping
 
 <details>
 <summary>If you're importing a CSS module, you can pass the scoped classes as the first argument. Classy will automatically match and replace the "naked" selectors with their scoped counterparts!</summary><br/>
@@ -49,7 +49,7 @@ bem('someClass'); // r2984fh9wnc
 
 </details>
 
-#### BEM Expansion
+### 🧨  BEM Expansion
 
 <details>
 <summary>Classy can auto-expand BEM "partial" selectors. Call it with the <code>bem</code> namespace option to prefix any selector that starts with <code>-</code> or a <code>_</code> with the root class. Sass-style root selectors (<code>&amp;</code>) will also be replaced with the root namespace.</summary><br/>
@@ -89,10 +89,10 @@ bem('_modifier'); // Block_modifier
 
 </details>
 
-#### React Hook
+### 🪝  React Hook Usage
 
-<details open>
-<summary>A React-ready wrapper around our classy utility! Call it like any hook, and use the returned instance to generate selector structures for your <code>className</code> props, like so:</summary><br/>
+<details>
+<summary>Classy comes with a React-ready wrapper around the main `classy` method! You can call it like any other hook, and use the returned instance to generate selector structures for your <code>className</code> props, like so:</summary><br/>
 
 ```jsx static
 import { useClassy } from 'use-classy';
