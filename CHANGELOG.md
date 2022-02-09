@@ -1,6 +1,17 @@
 Changelog
 ===
 
+## Version 1.3.1
+
+### 📘 Docs
+
+* update feature writeups ([571a6a3](https://github.com/rafegoldberg/classy/commit/571a6a31ffd62f6f3f33d6c27e7bd4d3f96dc84e))
+
+
+### 🤘 Fixes & Updates
+
+* force release ([c321217](https://github.com/rafegoldberg/classy/commit/c321217ef5f242714f0c34db2ba6088883562a84))
+
 ## Version 1.3.0
 
 ### 🤘 Fixes & Updates
