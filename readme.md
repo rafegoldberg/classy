@@ -41,8 +41,8 @@ If you'd like to reuse the same scope in a bunch of places, you can construct an
 ```js static
 import classes from './style.module.scss';
 
-const bem = new classy({ classes });
-bem('someClass'); // r2984fh9wnc
+const cn = new classy({ classes });
+cn('someClass'); // r2984fh9wnc
 ```
 
 </details>
