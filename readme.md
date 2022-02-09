@@ -74,7 +74,7 @@ const bem = new classy({
 });
 ```
 
-Now we can reuse a single classy instance throughout our component to generate markup structures against our BEM selectors on the fly! 💥
+Now we can reuse a single classy instance throughout our component to generate markup structures against our BEM selectors on the fly!
 
 ```js static
 bem();            // Block
