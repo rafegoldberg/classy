@@ -23,7 +23,7 @@ classy('class1', [[false && 'class2'], [[['class3']]]], '.class4, class5')
 Under the hood, this will flatten everything in to a single array, filter out any falsey values, and more! All of which gives you a nice, simple, space-separated class string:
 
 ```js static
-'class1 class2 class3 class4 class5';
+'class1 class3 class4 class5';
 ```
 
 ### 💄  Auto-Scoping
